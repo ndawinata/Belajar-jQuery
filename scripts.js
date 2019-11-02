@@ -133,4 +133,12 @@ $(document).ready(function () {
     $('#btn6').click(function () {
         $('#boxes_wrap').slideUp(2000).fadeIn(2000).fadeTo(2000, 0.5);
     })
+
+    // ----- Transversing------
+    $('li').first().css('color', 'red');
+    $('li').eq(1).css('color', 'cyan');
+    $('li').last().css('color', 'green');
+
+    $('li').filter('#css').css('fontSize', '25px');
+    $('li').not('#css').css('background', 'yellow')
 });
