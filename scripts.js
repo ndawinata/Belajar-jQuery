@@ -135,10 +135,16 @@ $(document).ready(function () {
     })
 
     // ----- Transversing------
-    $('li').first().css('color', 'red');
-    $('li').eq(1).css('color', 'cyan');
-    $('li').last().css('color', 'green');
+    // $('li').first().css('color', 'red');
+    // $('li').eq(1).css('color', 'cyan');
+    // $('li').last().css('color', 'green');
 
-    $('li').filter('#css').css('fontSize', '25px');
-    $('li').not('#css').css('background', 'yellow')
+    // $('li').filter('#css').css('fontSize', '25px');
+    // $('li').not('#css').css('background', 'yellow')
+
+    // -----siblings next nextAll nextUntil('param') ~prev 
+    $('#css').siblings().css('fontSize', '20px');
+    $('#css').nextUntil('#db').css('color', 'red');
+    // $('#css').next().css('color', 'red');
+    // $('#css').nextAll().css('color', 'red')
 });
