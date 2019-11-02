@@ -46,4 +46,20 @@ $(document).ready(function () {
     $('.boxes:eq(2)').remove();
     $('.boxes:eq(3)').empty();
 
+    //edit css jquery
+    $('h2').css({
+        'color': 'red',
+        'fontSize': '20px',
+        'backgroundColor': '#ccc'
+    });
+    $('h3:eq(0)').click(function () {
+        $('h3:eq(0)').addClass('change');
+    });
+    $('h3:eq(1)').click(function () {
+        $('h3:eq(1)').removeClass('change');
+    });
+    $('h3:eq(2)').click(function () {
+        $('h3:eq(2)').toggleClass('change');
+    });
+
 });
