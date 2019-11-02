@@ -143,8 +143,16 @@ $(document).ready(function () {
     // $('li').not('#css').css('background', 'yellow')
 
     // -----siblings next nextAll nextUntil('param') ~prev 
-    $('#css').siblings().css('fontSize', '20px');
-    $('#css').nextUntil('#db').css('color', 'red');
+    // $('#css').siblings().css('fontSize', '20px');
+    // $('#css').nextUntil('#db').css('color', 'red');
     // $('#css').next().css('color', 'red');
     // $('#css').nextAll().css('color', 'red')
+
+    // --------children find parent parents() parentsUntil------
+    // $('ul').children().css('color', "red");
+    // $('ul').children('span').css('color', 'red');
+    // $('ul').find('span').css('color', 'red');
+    // $('#css').parent('ul').css('border', '2px solid yellow');
+    $('#css').parentsUntil('#tester').css('border', '2px solid yellow');
+
 });
