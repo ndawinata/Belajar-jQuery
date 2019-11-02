@@ -16,4 +16,7 @@ $(document).ready(function () {
     $('h1').mouseleave(function () {
         $('h1').css('color', 'green');
     });
+    $('.boxes:eq(3)').mouseenter(function () {
+        $('.boxes:eq(3)').css('color', 'yellow');
+    });
 });
