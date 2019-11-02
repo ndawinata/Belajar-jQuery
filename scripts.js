@@ -71,7 +71,9 @@ $(document).ready(function () {
     // let nilai = $('#boxes_wrap').innerHeight();
     // let nilai = $('#boxes_wrap').innerWidth();
     // let nilai = $('#boxes_wrap').outerWidth();
-    let nilai = $('#boxes_wrap').outerWidth(true);
+    //let nilai = $('#boxes_wrap').outerWidth(true);
+    // ----mengubah nilai dimensi------
+    $('#boxes_wrap').width(120).height(120);
 
-    $('#box1').text(nilai);
+    // $('#box1').text(nilai);
 });
