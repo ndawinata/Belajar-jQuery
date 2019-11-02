@@ -19,4 +19,18 @@ $(document).ready(function () {
     $('.boxes:eq(3)').mouseenter(function () {
         $('.boxes:eq(3)').css('color', 'yellow');
     });
+
+    $('form').submit(function () {
+        let tulisan = $('#inputText').val();
+        $('h1').text(tulisan);
+
+        //mencegah reload
+        event.preventDefault();
+    });
+
+    // merubahah hanya textnya saja
+    $('.boxes:eq(4)').text('hahaha');
+    //merubah dengan tambahan element
+    $('.boxes:eq(5)').html('<h1> Bold </h1>');
+
 });
