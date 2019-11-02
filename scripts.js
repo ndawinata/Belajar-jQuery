@@ -31,7 +31,7 @@ $(document).ready(function () {
     // merubahah hanya textnya saja
     $('.boxes:eq(4)').text('hahaha');
     //merubah dengan tambahan element
-    $('.boxes:eq(5)').html('<h1> Bold </h1>');
+    //$('.boxes:eq(5)').html('<h1> Bold </h1>');
 
     //menambahkan dan menghapus
     //append prepend | after before
@@ -62,4 +62,16 @@ $(document).ready(function () {
         $('h3:eq(2)').toggleClass('change');
     });
 
+    //--- dimensi -----
+
+    // innerwidth -> kontent + padding
+    // outerWidth -> kontent + padding + border (+true ->hitung marginnya)
+    // let nilai = $('#boxes_wrap').height();
+    // let nilai = $('#boxes_wrap').width();
+    // let nilai = $('#boxes_wrap').innerHeight();
+    // let nilai = $('#boxes_wrap').innerWidth();
+    // let nilai = $('#boxes_wrap').outerWidth();
+    let nilai = $('#boxes_wrap').outerWidth(true);
+
+    $('#box1').text(nilai);
 });
