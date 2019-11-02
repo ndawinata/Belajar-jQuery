@@ -76,4 +76,45 @@ $(document).ready(function () {
     $('#boxes_wrap').width(120).height(120);
 
     // $('#box1').text(nilai);
+
+    // -------menampilkan dan menyembunyikan------
+    // $('#btn1').click(function () {
+    //     $('#box1').show();
+    // })
+
+    // $('#btn2').click(function () {
+    //     $('#box1').hide();
+    // })
+
+    // $('#btn3').click(function () {
+    //     $('#box1').toggle();
+    // })
+
+    // ada efek animasi
+    // $('#btn1').click(function () {
+    //     $('#box1').fadeIn(2000);
+    // })
+
+    // $('#btn2').click(function () {
+    //     $('#box1').fadeOut(2000);
+    // })
+
+    // $('#btn3').click(function () {
+    //     $('#box1').fadeToggle();
+    //     })
+    // ada waktu dan opasity
+    // $('#btn3').click(function () {
+    //     $('#box1').fadeTo(2000, 0.5);
+    // })
+    $('#btn1').click(function () {
+        $('#boxes_wrap').slideDown(2000);
+    })
+
+    $('#btn2').click(function () {
+        $('#boxes_wrap').slideUp(2000);
+    })
+
+    $('#btn3').click(function () {
+        $('#boxes_wrap').toggle();
+    })
 });
