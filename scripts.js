@@ -33,4 +33,17 @@ $(document).ready(function () {
     //merubah dengan tambahan element
     $('.boxes:eq(5)').html('<h1> Bold </h1>');
 
+    //menambahkan dan menghapus
+    //append prepend | after before
+    //diakhir
+    $('#boxes_wrap').append('<div>Halo</div>');
+    $('#boxes_wrap').after('<div>Halo1</div>');
+    //diawal
+    $('#boxes_wrap').prepend('<div>Halo2</div>');
+    $('#boxes_wrap').before('<div>Halo3</div>');
+
+    //remove dan empty
+    $('.boxes:eq(2)').remove();
+    $('.boxes:eq(3)').empty();
+
 });
