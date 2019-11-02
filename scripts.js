@@ -117,4 +117,20 @@ $(document).ready(function () {
     $('#btn3').click(function () {
         $('#boxes_wrap').toggle();
     })
+
+    //stop animasi - callback - chaining
+    $('#btn4').click(function () {
+        $('#boxes_wrap').stop();
+    })
+    // ---callback----
+    $('#btn5').click(function () {
+        $('#boxes_wrap').slideDown(2000, function () {
+            alert('selesai');
+        });
+    })
+
+    // --chaining---
+    $('#btn6').click(function () {
+        $('#boxes_wrap').slideUp(2000).fadeIn(2000).fadeTo(2000, 0.5);
+    })
 });
